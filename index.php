@@ -9,17 +9,14 @@ echo "<html>
   <link rel=\"stylesheet\" href=\"static/style.css\">
 </head>
 <body>
-
+  <div class=\"titlebar\"> 
+    <a class=\"NAV-PLEASE-WORK\" href=\"http://127.0.0.1:8000/phpFiles/upload.php\">Upload-Car</a>
+    <a class=\"NAV-PLEASE-WORK\" href=\"http://127.0.0.1:8000/phpFiles/complain.php\">Contact Us</a>
+    <a class=\"NAV-PLEASE-WORK\" href=\"http://127.0.0.1:8000/phpFiles/signup.php\">Sign-up</a>
+    <a class=\"NAV-PLEASE-WORK\" href=\"http://127.0.0.1:8000/phpFiles/login.php\">Login</a>
+  </div>
+  <br>
   <table width=\"100%\">
-
-    <!--<tr>
-      <td colspan=\"3\">
-        <div class=\"titlebar\">
-         <p>Sign-up<p>Login</p></p>
-        </div>
-      </td>
-    </tr>-->
-
 
     <!-- ROW 1 -->
     <tr>
@@ -32,7 +29,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img1')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img1').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/aston-martin.html\" target=\"_blank\">View Details</a>
+        <a class=\"img1\" class=\"butn\" href=\"static/aston-martin.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -42,7 +39,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img2')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img2').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/bugatti.html\" target=\"_blank\">View Details</a>
+        <a class=\"img2\" class=\"butn\" href=\"static/bugatti.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -51,7 +48,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img3')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img3').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/ferrari.html\" target=\"_blank\">View Details</a>
+        <a class=\"img3\" class=\"butn\" href=\"static/ferrari.html\" target=\"_blank\">View Details</a>
       </td>
     </tr>
 
@@ -64,7 +61,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img4')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img4').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/jesko.html\" target=\"_blank\">View Details</a>
+        <a class=\"img4\" class=\"butn\" href=\"static/jesko.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -73,7 +70,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img5')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img5').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/lamborghini.html\" target=\"_blank\">View Details</a>
+        <a class=\"img5\" class=\"butn\" href=\"static/lamborghini.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -82,7 +79,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img6')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img6').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/mclaren.html\" target=\"_blank\">View Details</a>
+        <a class=\"img6\" class=\"butn\" href=\"static/mclaren.html\" target=\"_blank\">View Details</a>
       </td>
     </tr>
 
@@ -95,7 +92,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img7')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img7').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/MG.html\" target=\"_blank\">View Details</a>
+        <a class=\"img7\" class=\"butn\" href=\"static/MG.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -104,7 +101,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img8')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img8').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/porsche.html\" target=\"_blank\">View Details</a>
+        <a class=\"img8\" class=\"butn\" href=\"static/porsche.html\" target=\"_blank\">View Details</a>
       </td>
       <td align=\"center\">
         <div class=\"imageContainer\">";
@@ -114,7 +111,7 @@ echo "<html>
         echo "</div>
         <button onclick=\"changeLocation('img9')\" class=\"butn\">Buy</button>
         <!--<button onclick=\"viewContent(document.getElementById('img9').src)\" class=\"butn\">View Details</button>-->
-        <a class=\"butn\" href=\"static/rolls.html\" target=\"_blank\">View Details</a>
+        <a class=\"img9\" class=\"butn\" href=\"static/rolls.html\" target=\"_blank\">View Details</a>
       </td>
     </tr>
   </table>";
@@ -126,7 +123,7 @@ if(isset($_FILES["yourImage"]) && isset($_POST["car-details"]) && isset($_POST["
   $identifier=$_POST["identifier"];
   
   if($_POST["identifier"] > 9 && $_POST["identifier"] < 16){
-    uploadFile($_FILES["yourImage"],$_POST["identifier"],$_POST["car-details"]);
+    uploadFile($_FILES["yourImage"],$_POST["identifier"],$_POST["car-details"],$_POST["title"]);
   }
   else{
     header("Location:http://127.0.0.1:8000/phpFiles/error_files/identifier_error.php");
@@ -137,7 +134,7 @@ echo readUploadedFiles("10"); echo readUploadedFiles("11"); echo readUploadedFil
 echo "
 <br><br><br>
 <script src=\"static/index.js\"></script>
-<a href=\"http://127.0.0.1:8000/phpFiles/static/contact-us.html\" id=\"contact-us\">Contact Us</a>
+<a href=\"http://127.0.0.1:8000/phpFiles/complain.php\" id=\"contact-us\">Contact Us</a>
 <a href=\"http://127.0.0.1:8000/phpFiles/upload.php\" id=\"upload-car\">Upload Car</a>
 </body>
 </html>";

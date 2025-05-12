@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mycar</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+    }
+
+    .Background {
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-text {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 60px;
+      border-radius: 10px;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 900px;
+      margin-top: 40px;
+      margin-left: 170px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      line-height: 1.8;
+      font-size: 1.1em;
+      overflow: auto;
+    }
+
+    .icon-container {
+      float: right;
+      margin-left: 20px;
+    }
+
+    .icon-images {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="Background">
+    <div class="box-text">
+        Mycar
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="icon-container">
+      <img class="icon-images" src="https://cdn-icons-png.flaticon.com/128/2297/2297498.png">
+      <img class="icon-images" src="https://cdn-icons-png.flaticon.com/128/1023/1023757.png">
+      <img class="icon-images" src="https://cdn-icons-png.flaticon.com/512/17808/17808282.png">
+    </div>
+    <p>
+        myCar
+    </p>
+  </section>
+  <br>
+  <?php
+  if (isset($_GET["id"])) {
+      $folder = $_GET["id"];
+      $file_location = "uploads/" . $folder . "/";
+      $result = scandir($file_location);
+      $result = array_diff($result, array('.', '..'));
+      $filename = reset($result);
+      echo "<script>document.body.style.backgroundImage = 'url(\"uploads/$folder/$filename\")';</script>";
+  }
+  ?>
+</body>
+</html>

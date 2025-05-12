@@ -93,17 +93,29 @@ table{
 
 .titlebar{
   text-align: center;
-  justify-content: center;
   background-color: gray;
-  opacity: 70%;
+  opacity: 90%;
   font-size: large;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 10px;
   font-weight: bold;
-  height: 60px;
-  width: 100%;
+  /* margin-top: 10000px; */
 }
 .NAV-PLEASE-WORK{
+  padding: 10px;
+  /* background-color: grey; */
+  border-radius: 5px;
+  opacity: none;
   text-decoration: none;
-  margin-right: 25px;
+  margin-right: 300px;
+  margin-left: 50px;
+  /* margin-top: 10px; */
+  color: blue;
+  text-decoration: none;
+}
+
+.NAV-PLEASE-WORK:hover{
+  color:#454e5c;
+  transition: 0.3s ease;
+  background-color: red;
 }

@@ -8,6 +8,9 @@
     }
 
     body {
+      background-image: url("static/horror-scene-with-eerie-hall_23-2150975360.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
       font-family: Raleway;
       background-color: #f4f4f9;
       display: flex;
@@ -87,7 +90,7 @@
       padding: 12px 18px;
       background-color: #d3d1c7;
       font-family: Raleway;
-      color: white;
+      color: rgb(29, 22, 22);
       border: none;
       opacity: 90%;
       border-radius: 8px;
@@ -98,11 +101,34 @@
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #5ee4e4;
       transform: scale(1.05);
     }
 
     button:focus {
+      outline: 2px solid #45a049;
+      outline-offset: 2px;
+    }
+    #myP{
+      margin-top: 17px;
+      color:#ccc;
+      font-weight: bold;
+    }
+    #myLink{
+      font-size: 20px;
+      text-decoration: none;
+      background-color: #d1d0cf;
+      border-radius: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    #myLink:hover {
+      background-color: #5ee4e4;
+      transform: scale(1.05);
+    }
+    #myLink:focus {
       outline: 2px solid #45a049;
       outline-offset: 2px;
     }
@@ -133,7 +159,10 @@
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="Enter your Password" required>
       </div>
-      <button type="submit">Submit</button>
+      <button class="buttons" type="submit">Submit</button>
+      <br>
+      <p id="myP">Already have an account ?</p>
+      <button class="buttons" onclick="window.location='http://127.0.0.1:8000/phpFiles/login.php'">Login</button>
     </form>
 
   </div>
