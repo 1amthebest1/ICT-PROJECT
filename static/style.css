@@ -1,0 +1,109 @@
+body {
+  background-image: url("horror-scene-with-eerie-hall_23-2150975360.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 10px; /* adds spacing between cells */
+}
+#nav-bar{
+  background-color: antiquewhite;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav{
+  margin: 0px;
+}
+
+.carImage {
+  border-color: rgb(211, 171, 171);
+  border-width: 5px;
+  border-style: solid;
+  height: 340vh;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carImage:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer {
+  margin-bottom: 10px;
+}
+
+.butn {
+  background-color: #454e5c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  margin-top:20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px;
+}
+
+.butn:hover {
+  background-color: #3367d6;
+}
+
+#contact-us{
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: larger;
+  padding: 25px;
+  margin-left: 190px;
+  margin-top: 30px;
+}
+#contact-us:hover{
+  background-color: red;
+}
+
+#upload-car{
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: larger;
+  padding: 25px;
+  margin-left: 50px;
+  margin-top: 30px;
+
+}
+
+#upload-car:hover{
+  background-color: red;
+}
+
+.titlebar{
+  text-align: center;
+  justify-content: center;
+  background-color: gray;
+  opacity: 70%;
+  font-size: large;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-weight: bold;
+  height: 60px;
+  width: 100%;
+}
+.NAV-PLEASE-WORK{
+  text-decoration: none;
+  margin-right: 25px;
+}

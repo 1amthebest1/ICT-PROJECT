@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 200 
+date: Tue, 22 Apr 2025 18:51:57 GMT
+content-type: text/plain; charset=utf-8
+rndr-id: 65c547fd-733a-4658
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url
+vary: Accept-Encoding
+x-experimental-stream-data: false
+x-ratelimit-limit: 1
+x-ratelimit-remaining: 179
+x-ratelimit-reset: 1745365916866
+x-render-origin-server: Render
+x-user-pro: false
+cf-cache-status: DYNAMIC
+server: cloudflare
+cf-ray: 934750bf890f3890-KHI
+alt-svc: h3=":443"; ma=86400
+
+Start of Message  
+Hello! I'm just a program, but I'm here and ready to assist you. How can I help you today?  
+End of Message
