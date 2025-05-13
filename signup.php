@@ -12,6 +12,5 @@
         $password=$_POST["password"];
 
         insertDB($name,$email,$password);
-        header('Location:http://127.0.0.1:8000/phpFiles/index.php');
     };
 ?>
