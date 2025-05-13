@@ -126,7 +126,7 @@ if(isset($_FILES["yourImage"]) && isset($_POST["car-details"]) && isset($_POST["
     uploadFile($_FILES["yourImage"],$_POST["identifier"],$_POST["car-details"],$_POST["title"]);
   }
   else{
-    header("Location:http://127.0.0.1:8000/phpFiles/error_files/identifier_error.php");
+    echo "<script>window.location=\"http://127.0.0.1:8000/phpFiles/error_files/identifier_error.php\"</script>";
   } 
 }
 

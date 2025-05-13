@@ -8,7 +8,7 @@
     }
 
     body {
-      background-image: url("static/horror-scene-with-eerie-hall_23-2150975360.jpg");
+      background-image: url("../static/horror-scene-with-eerie-hall_23-2150975360.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       font-family: Raleway;
@@ -168,7 +168,6 @@
     </form>
 
   </div>
-  <script>alert("Identifier should be between 10 to 15")</script>
 
 </body>
 </html>
