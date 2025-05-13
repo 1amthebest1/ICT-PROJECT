@@ -122,7 +122,7 @@
           newLink=document.createElement(\"a\");
           newLink.className=\"$targetId\";
           newLink.href = `static/$folder.php?id=$folder`;
-          newLink.textContent = \"UPDATED\";
+          newLink.textContent = \"View Details\";
           oldLink.replaceWith(newLink);
         </script>";
         
