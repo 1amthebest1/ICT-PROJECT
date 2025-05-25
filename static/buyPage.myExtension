@@ -1,0 +1,27 @@
+<head>
+	<style>
+    	#myDiv{
+            
+        text-align:center;
+        margin-left:350px;
+        }
+    	#td1{
+        font-size:20px;    
+        color:red;
+        font-weight:bold;
+        }
+        #myLink{
+        	text-decoration:none;
+        	font-size:40px;
+        }
+    </style>
+</head>
+
+<div id="myDiv">
+<table style="width:100%">
+	<tr>
+    	<td id="td1">Contact us to place an order at: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="myLink" href="http://127.0.0.1:8000/phpFiles/complain.php">Contact Page</a></td>
+    </tr>
+</table>
+</div>
+

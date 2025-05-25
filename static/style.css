@@ -1,5 +1,5 @@
 body {
-  background-image: url("horror-scene-with-eerie-hall_23-2150975360.jpg");
+  background-image: url("hall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Raleway', sans-serif;
@@ -64,7 +64,7 @@ table{
 #contact-us{
   text-decoration: none;
   border-radius: 10px;
-  background-color: antiquewhite;
+  background-color: #f8f8f8;
   font-weight: bold;
   font-size: larger;
   padding: 25px;
@@ -78,7 +78,7 @@ table{
 #upload-car{
   text-decoration: none;
   border-radius: 10px;
-  background-color: antiquewhite;
+  background-color: #f8f8f8;
   font-weight: bold;
   font-size: larger;
   padding: 25px;
