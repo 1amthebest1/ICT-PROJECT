@@ -44,6 +44,7 @@ table{
 }
 
 .butn {
+  text-decoration: none;
   background-color: #454e5c;
   color: white;
   border: none;
@@ -58,7 +59,7 @@ table{
 }
 
 .butn:hover {
-  background-color: #3367d6;
+  background-color: #33d6ce;
 }
 
 #contact-us{
@@ -72,7 +73,7 @@ table{
   margin-top: 30px;
 }
 #contact-us:hover{
-  background-color: red;
+  background-color: #33d6ce;
 }
 
 #upload-car{
@@ -88,13 +89,13 @@ table{
 }
 
 #upload-car:hover{
-  background-color: red;
+  background-color: #33d6ce;
 }
 
 .titlebar{
   text-align: center;
-  background-color: gray;
-  opacity: 90%;
+  background-color: rgb(16, 14, 14);
+  /* opacity: 90%; */
   font-size: large;
   margin-bottom: 10px;
   padding: 10px;
@@ -118,5 +119,19 @@ table{
 .NAV-PLEASE-WORK:hover{
   color:#454e5c;
   transition: 0.3s ease;
-  background-color: rgb(226, 43, 43);
+  background-color: rgb(205, 226, 43);
+}
+#about-us{
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(15, 14, 11);
+  font-size: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  color: yellow;
+}
+#myBold{
+  color:red;
+  font-weight: bold;
+  font-size: 25px;
 }

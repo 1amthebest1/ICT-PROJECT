@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
+  <title>MyTitle</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <style>
     body {
@@ -61,7 +61,7 @@
 
   <section class="Background">
     <div class="box-text">
-        Title
+        MyTitle
     </div>
   </section>
 
@@ -72,7 +72,7 @@
       <img class="icon-images" src="https://cdn-icons-png.flaticon.com/512/17808/17808282.png">
     </div>
     <p>
-        12
+        myCar details
     </p>
   </section>
   <br>
