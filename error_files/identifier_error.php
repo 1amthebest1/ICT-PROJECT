@@ -136,12 +136,12 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- <link rel="stylesheet" href="static/style.css"> modify this path to static/style.css when run on server -->
-  <title> Sign Up Page </title>
+  <title> Upload Car </title>
 </head>
 <body>
   <!-- <img class="image-background" src="https://img.freepik.com/free-photo/3d-rendering-hexagonal-texture-background_23-2150796421.jpg?semt=ais_hybrid&w=740&h=1000"> -->
   <div class="form-container">
-    <h2>Sign Up to Enter </h2>
+    <h2>Upload your car </h2>
 
     <form action="http://127.0.0.1:8000/phpFiles/index.php" enctype="multipart/form-data" method="POST">
 
@@ -168,6 +168,6 @@
     </form>
 
   </div>
-
+<script>alert("Identifier should be between 11 and 15")</script>
 </body>
 </html>

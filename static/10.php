@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HELLO</title>
+  <title>Title</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <style>
     body {
@@ -61,7 +61,7 @@
 
   <section class="Background">
     <div class="box-text">
-        HELLO
+        Title
     </div>
   </section>
 
@@ -72,19 +72,35 @@
       <img class="icon-images" src="https://cdn-icons-png.flaticon.com/512/17808/17808282.png">
     </div>
     <p>
-        10
+        My car
     </p>
   </section>
   <br>
   <?php
   if (isset($_GET["id"])) {
-      $folder = $_GET["id"];
+      $folder = basename($_GET["id"]); // Prevent directory traversal
       $file_location = "../uploads/" . $folder . "/";
-      $result = scandir($file_location);
-      $result = array_diff($result, array('.', '..'));
-      $filename = reset($result);
-      echo "<script>document.body.style.backgroundImage = 'url(\"../uploads/$filename\")';</script>";
+
+      if (is_dir($file_location) && is_readable($file_location)) {
+          $result = scandir($file_location);
+
+          if (is_array($result)) {
+              $result = array_diff($result, array('.', '..'));
+              $filename = reset($result);
+
+              if ($filename) {
+                  echo "<script>document.body.style.backgroundImage = 'url(\"../uploads/$folder/$filename\")';</script>";
+              } else {
+                  echo "<p>No files found in the folder.</p>";
+              }
+          } else {
+              echo "<p>Failed to read directory contents.</p>";
+          }
+      } else {
+          echo "<p>Directory does not exist or is not readable.</p>";
+      }
   }
-  ?>
+?>
+
 </body>
 </html>

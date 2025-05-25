@@ -24,7 +24,7 @@ table{
 }
 
 .carImage {
-  border-color: rgb(211, 171, 171);
+  border-color: rgb(222, 10, 10);
   border-width: 5px;
   border-style: solid;
   height: 340vh;
@@ -110,12 +110,13 @@ table{
   margin-right: 300px;
   margin-left: 50px;
   /* margin-top: 10px; */
-  color: blue;
+  color:  blue;
+  font-weight: 10000;
   text-decoration: none;
 }
 
 .NAV-PLEASE-WORK:hover{
   color:#454e5c;
   transition: 0.3s ease;
-  background-color: red;
+  background-color: rgb(226, 43, 43);
 }
